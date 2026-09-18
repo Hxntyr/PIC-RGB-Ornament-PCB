@@ -1,0 +1,51 @@
+### Footprint positions - created on 2026-09-18T00:53:16 ###
+### Printed by KiCad version 10.0.6
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val         Package                              PosX       PosY       Rot  Side
+BT1       3088TR      Keystone_3088TR                   60.0893    61.3449  180.0000  bottom
+C1        10uF        C_0603_1608Metric                 44.4900    93.3550    0.0000  bottom
+C2        10uF        C_0603_1608Metric                 51.6346    95.4149  -90.0000  bottom
+C3        100nF       C_0402_1005Metric                 70.9500    95.9200    0.0000  bottom
+F1        50mA        Fuse_0603_1608Metric              43.0000    87.3000  -90.0000  bottom
+L1        4.7u        Murata_LQM2MPN4R7MG0L             48.6346    99.1849  -90.0000  bottom
+R1        309K        R_0402_1005Metric                 53.9046    99.2549   90.0000  bottom
+R2        604K        R_0402_1005Metric                 53.9046    96.9149  -90.0000  bottom
+R3        10k         R_0402_1005Metric                 70.5100    94.3400   90.0000  bottom
+RN1       8.2K        R_Array_Convex_8x0602             54.5950    30.7532    0.0000  bottom
+RN2       3.9K        R_Array_Convex_8x0602             54.5950    44.7533    0.0000  bottom
+RN3       3.9K        R_Array_Convex_8x0602             54.5950    37.7533    0.0000  bottom
+RN4       8.2K        R_Array_Convex_8x0602             61.5950    43.1800  180.0000  bottom
+RN5       3.9K        R_Array_Convex_8x0602             61.5950    29.1800  180.0000  bottom
+RN6       3.9K        R_Array_Convex_8x0602             61.5950    36.1800  180.0000  bottom
+RN7       8.2K        R_Array_Convex_8x0602             65.8500    89.2750   90.0000  bottom
+RN8       3.9K        R_Array_Convex_8x0602             51.8500    89.2750   90.0000  bottom
+RN9       3.9K        R_Array_Convex_8x0602             58.8500    89.2750   90.0000  bottom
+SW1       SPDT        CK_JS102011JAQN                   38.7100    90.8300   90.0000  bottom
+U1        MCP1640     SOT-23-6                          51.6046    99.2224  -90.0000  bottom
+U2        PIC12F1572  Microchip_PIC12F1572T-IMF         67.8200    94.8250  -90.0000  bottom
+D1        RGB         Kingbright_APHF1608LSEEQBDZGKC    21.6000    48.3300  180.0000  top
+D2        RGB         Kingbright_APHF1608LSEEQBDZGKC    19.6900    59.0600  180.0000  top
+D3        RGB         Kingbright_APHF1608LSEEQBDZGKC    11.4300    55.2400  -90.0000  top
+D4        RGB         Kingbright_APHF1608LSEEQBDZGKC    15.8750    41.9100  -90.0000  top
+D5        RGB         Kingbright_APHF1608LSEEQBDZGKC    26.6700    34.2900  -90.0000  top
+D6        RGB         Kingbright_APHF1608LSEEQBDZGKC    39.3700    31.1150  -90.0000  top
+D7        RGB         Kingbright_APHF1608LSEEQBDZGKC    43.4800    20.6800    0.0000  top
+D8        RGB         Kingbright_APHF1608LSEEQBDZGKC    46.6500    12.4300    0.0000  top
+D9        RGB         Kingbright_APHF1608LSEEQBDZGKC    73.0250    11.4300   90.0000  top
+D10       RGB         Kingbright_APHF1608LSEEQBDZGKC    74.2950    22.2250   90.0000  top
+D11       RGB         Kingbright_APHF1608LSEEQBDZGKC    76.2000    31.7500   90.0000  top
+D12       RGB         Kingbright_APHF1608LSEEQBDZGKC    84.4550    40.6400   90.0000  top
+D13       RGB         Kingbright_APHF1608LSEEQBDZGKC    97.1550    45.7200   90.0000  top
+D14       RGB         Kingbright_APHF1608LSEEQBDZGKC   107.3150    59.0550   90.0000  top
+D15       RGB         Kingbright_APHF1608LSEEQBDZGKC    99.0600    66.0400  -90.0000  top
+D16       RGB         Kingbright_APHF1608LSEEQBDZGKC    96.5200    55.8800  180.0000  top
+D17       RGB         Kingbright_APHF1608LSEEQBDZGKC    39.3700    79.3750    0.0000  top
+D18       RGB         Kingbright_APHF1608LSEEQBDZGKC    39.3700    65.4050    0.0000  top
+D19       RGB         Kingbright_APHF1608LSEEQBDZGKC    45.0850    53.3400    0.0000  top
+D20       RGB         Kingbright_APHF1608LSEEQBDZGKC    54.7100    50.7300    0.0000  top
+D21       RGB         Kingbright_APHF1608LSEEQBDZGKC    64.9800    51.0500    0.0000  top
+D22       RGB         Kingbright_APHF1608LSEEQBDZGKC    75.5650    53.3400   90.0000  top
+D23       RGB         Kingbright_APHF1608LSEEQBDZGKC    79.3750    67.3100   90.0000  top
+D24       RGB         Kingbright_APHF1608LSEEQBDZGKC    78.7400    80.0100   90.0000  top
+## End
