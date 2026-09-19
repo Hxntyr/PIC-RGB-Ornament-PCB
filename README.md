@@ -4,7 +4,7 @@ A template for making — and a collection of — small RGB LED PCB ornaments.
 
 The core circuit uses a PIC12F1572, CR2450R coin cell, and MCP1640 boost converter to drive 24 low-current RGB LEDs through three shared PWM channels. It is intended to be reused across different board shapes, artwork, and LED layouts without redesigning the electronics each time.
 
-The basic workflow is: copy the core project, rearrange it into an ornament, generate the manufacturing files, and send it off for PCBA — or [purchase the components and assemble it yourself](https://www.digikey.com/en/mylists/list/D7LT6KEKSW).
+Copy the core project, make your own layout, generate the manufacturing files, and send it off for PCBA — or [purchase the components and assemble it yourself](https://www.digikey.com/en/mylists/list/D7LT6KEKSW).
 
 <p align="center">
   <img src="PIC%20RGB%20Ornament%20Core/PIC%20RGB%20Ornament%20Core.png" alt="PIC RGB Ornament Core" width="40%">
