@@ -1,0 +1,211 @@
+(footprint "Murata_LQM2MPN4R7MG0L"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Inductor, Murata, DFE201610P, 2.0x1.6x1.0mm, (https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundmetalalloychiptype/m_dfe201610p.ashx)")
+	(tags "power chip flatwire")
+	(property "Reference" "L1"
+		(at 0 -1.75 0)
+		(layer "F.SilkS")
+		(uuid "4feeb27a-7c1c-498e-aeec-e4a1cf48df8d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "4.7u"
+		(at 0 1.75 0)
+		(layer "F.Fab")
+		(uuid "91274be3-a283-47ab-bfcf-f1a33626a615")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://pim.murata.com/asset/pim4/inductor/JELF243B-0022_PDF_INDUCTOR"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f62d4920-e570-4d50-b737-c6558649fdab")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Shielded boost inductor, 1.1 A, 175 mΩ max"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cd5df795-b885-4fae-a4d1-571f014497de")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "inductor/SMD"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ca5dd939-70f0-4163-a5e4-7f0903815be4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "valid fp" "EDIT"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8785d2cc-2fdd-42da-bf29-bea6e6aeb3e7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly Notes" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d3459309-5064-4b02-9e3a-b7017c5de39c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly Type" "SMD"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "889dc014-cca7-40ab-9fb5-af134e56eca3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "LQM2MPN4R7MG0L"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a3bd409-ce27-4b2c-aa6a-8d587e8b8cd3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Murata"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "179f6ddb-490c-4185-b795-69bd4aca3b9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+	(sheetname "/")
+	(sheetfile "HappyBirthdayMickey_A.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.11 -1.06)
+		(end 1.11 -1.06)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "20704f86-dff9-4073-b305-5d635254bb4e")
+	)
+	(fp_line
+		(start 1.11 1.06)
+		(end -1.11 1.06)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5202a999-78cb-404e-9b2f-f6dd2a7978d5")
+	)
+	(fp_rect
+		(start -1.4 -1.1)
+		(end 1.4 1.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0a99e6f6-eb08-4978-bf5e-9f5d980ac6db")
+	)
+	(fp_rect
+		(start -1 -0.8)
+		(end 1 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "be3a49b2-f187-4cd0-8bb2-3abf8402f272")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "28e00c67-90fc-4ee7-a0b8-fa4bc93e08ec")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.8125 0)
+		(size 0.825 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c176e793-d7c7-4374-95a0-65bd366e931d")
+	)
+	(pad "2" smd rect
+		(at 0.8125 0)
+		(size 0.825 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "20e1a034-d776-4b9c-9a0d-3191f4ff6c40")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Murata_DFE201610P.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

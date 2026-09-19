@@ -1,0 +1,206 @@
+(footprint "Kingbright_APHF1608LSEEQBDZGKC"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "crystal Epson Toyocom FA-128 (https://support.epson.biz/td/api/doc_check.php?dl=brief_FA-128&lang=en), 2x1.6mm^2 package")
+	(tags "SMD SMT crystal")
+	(property "Reference" "D1"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(uuid "9d486b38-9f3b-496b-8cf2-2917482293b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RGB"
+		(at 0 2 0)
+		(layer "F.Fab")
+		(uuid "cb2d3ef1-78fc-468f-ade7-eb5c4c8a0ac4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APHF1608LSEEQBDZGKC.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dc0164ae-efe8-46f0-85b3-13a1c42d4dee")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Common-anode RGB LED, 1.6×0.8×0.5 mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "710bd236-dbd5-42a2-91cd-905b3473149b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "valid fp" "EDIT"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "24606907-c75e-4cbb-a4d7-462a749e1555")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly Notes" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "221c6aed-36ce-4652-9c7c-98b1fe49575a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly Type" "SMD"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "324add62-f3b4-4583-aef7-921045a51a5f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "APHF1608LSEEQBDZGKC"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "77e1e6ba-3bb7-4c0e-8f94-b7fc7e17deb7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Kingbright"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "838611df-4576-4ef1-8f64-5fc83875bc37")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+	(sheetname "/")
+	(sheetfile "HappyBirthdayMickey_A.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.1 -0.8)
+		(end 1.1 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a82a0e9c-78fe-4d12-aa67-933b2d8174d5")
+	)
+	(fp_poly
+		(pts
+			(xy -0.8 -0.4) (xy 0.8 -0.4) (xy 0.8 0.4) (xy -0.5 0.4) (xy -0.8 0.1)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "4c70958e-855b-4317-aa31-898869c63516")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -0.9 0)
+		(layer "F.Fab")
+		(uuid "258cbe6c-05c2-47bf-a7c2-054ac66450e3")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.65 0.35)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.12)
+		(uuid "678168b7-90bf-49d5-aa9f-9eac049e07f0")
+	)
+	(pad "2" smd roundrect
+		(at 0.65 0.35)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.12)
+		(uuid "ad5120d7-acf4-44c9-a0d8-d9ab958771a7")
+	)
+	(pad "3" smd roundrect
+		(at 0.65 -0.35)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.12)
+		(uuid "7896cc53-6d44-4149-b7b6-3adabde9bb76")
+	)
+	(pad "4" smd roundrect
+		(at -0.65 -0.35)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.12)
+		(uuid "28c54d36-a5b1-45a1-b2ce-e37d493a9e1a")
+	)
+	(group ""
+		(uuid "549f55f7-f2b9-4536-916e-f4178dd04097")
+		(members "28c54d36-a5b1-45a1-b2ce-e37d493a9e1a" "678168b7-90bf-49d5-aa9f-9eac049e07f0"
+			"7896cc53-6d44-4149-b7b6-3adabde9bb76" "ad5120d7-acf4-44c9-a0d8-d9ab958771a7"
+		)
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_SeikoEpson_FA128-4Pin_2.0x1.6mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

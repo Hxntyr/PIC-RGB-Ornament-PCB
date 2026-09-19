@@ -1,0 +1,250 @@
+(footprint "Microchip_PIC12F1572T-IMF"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "8-Pin ePad 3mm x 3mm MLF - 3x3x0.85 mm Body (see Microchip datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/mic5355_6.pdf)")
+	(tags "DFN MLF 0.65")
+	(property "Reference" "U2"
+		(at 0 -2.55 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c1601826-58ef-4f4f-82ec-52ab514820bf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "PIC12F1572"
+		(at 0 2.55 0)
+		(layer "F.Fab")
+		(uuid "a593543b-d9b5-411f-84e9-18817a266ec1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/40001723D.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "507d458f-f1df-439c-98cc-e293a14bc50d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "8-bit MCU, 3× 16-bit PWM, internal oscillator"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9711308b-a91a-44fc-838b-4aa81637e484")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "valid fp" "YES"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "baf40253-f6d9-43a5-95ce-8e2401a00f58")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly Notes" "PROGRAM BEFORE ASSEMBLY. Firmware file: PIC_RGB_Ornament.hex. Do not substitute MCU without approval"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11619169-6ccf-4e1e-a77e-11682f9570e2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly Type" "SMD"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "64e4b07d-7cc4-4685-a8bf-bc02fb5ed23b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "PIC12F1572T-I/MF"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c401a18-e800-4e72-ac7e-518420f29e8e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Microchip"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "566a6848-64bb-41e6-9179-a27538fde624")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "DFN*1EP*3x2mm*P0.5mm*")
+	(sheetname "/")
+	(sheetfile "HappyBirthdayMickey_A.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.6 1.6)
+		(end -1.6 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4bd8a939-3e1c-410d-91e7-f2aebf63d26b")
+	)
+	(fp_line
+		(start 1.6 1.6)
+		(end 1.6 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ae1ca70d-eb20-4d2a-b732-14c8bb39fe5c")
+	)
+	(fp_poly
+		(pts
+			(xy -1.7 1.7) (xy -1.7 1.98) (xy -1.98 1.7) (xy -1.7 1.7)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "e1353ea1-8fb5-438e-9ece-5b3cb42e0933")
+	)
+	(fp_poly
+		(pts
+			(xy -1.5 -1.5) (xy 1.5 -1.5) (xy 1.5 1.5) (xy -0.96 1.5) (xy -1.5 0.96)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "2c2ad80c-b1b5-436a-accf-d7b68af0b957")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "554103fd-8320-4551-8d8b-956990bbeacd")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.975 1.55)
+		(size 0.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b8736190-757d-42ef-8b62-837b08c21b58")
+	)
+	(pad "2" smd rect
+		(at -0.325 1.55)
+		(size 0.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2f820656-7cec-42b9-9e48-ecf106194bd5")
+	)
+	(pad "3" smd rect
+		(at 0.325 1.55)
+		(size 0.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f6e1d8a1-2865-4b76-88ad-75b0a681648c")
+	)
+	(pad "4" smd rect
+		(at 0.975 1.55)
+		(size 0.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "702e5f93-ad2c-4674-8b44-052823045769")
+	)
+	(pad "5" smd rect
+		(at 0.975 -1.55)
+		(size 0.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ac1b0421-ce32-4343-8c0d-15aa0815075d")
+	)
+	(pad "6" smd rect
+		(at 0.325 -1.55)
+		(size 0.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dd566df9-4c15-4ecf-bdfc-64be5249917e")
+	)
+	(pad "7" smd rect
+		(at -0.325 -1.55)
+		(size 0.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6fe986fe-769c-4f95-9611-37b5f3c36f4b")
+	)
+	(pad "8" smd rect
+		(at -0.975 -1.55)
+		(size 0.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dba05725-1543-4a91-8cac-1214378a8217")
+	)
+	(group ""
+		(uuid "d4de251c-9f3c-42a2-b4f4-d0a7baf0736f")
+		(members "2f820656-7cec-42b9-9e48-ecf106194bd5" "6fe986fe-769c-4f95-9611-37b5f3c36f4b"
+			"702e5f93-ad2c-4674-8b44-052823045769" "ac1b0421-ce32-4343-8c0d-15aa0815075d"
+			"b8736190-757d-42ef-8b62-837b08c21b58" "dba05725-1543-4a91-8cac-1214378a8217"
+			"dd566df9-4c15-4ecf-bdfc-64be5249917e" "f6e1d8a1-2865-4b76-88ad-75b0a681648c"
+		)
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/MLF-8-1EP_3x3mm_P0.65mm_EP1.55x2.3mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
