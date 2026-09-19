@@ -1,3 +1,4 @@
 (fp_lib_table
-	(version 7)
+  (version 7)
+  (lib (name "HX")(type "KiCad")(uri "${KIPRJMOD}/../HX.pretty")(options "")(descr "Project custom footprints"))
 )
