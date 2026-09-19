@@ -1,65 +1,124 @@
 # PIC RGB Ornament PCB
 
-A reusable RGB ornament PCB design built around a small PIC microcontroller, a coin cell, and a bunch of low-current RGB LEDs.
+A template for making — and a collection of — small RGB LED PCB ornaments.
 
-The idea is to keep one base circuit around and reuse it for different ornament shapes, artwork, LED arrangements, and future designs without having to reinvent the electronics every time.
+The core circuit uses a PIC12F1572, CR2450R coin cell, and MCP1640 boost converter to drive 24 low-current RGB LEDs through three shared PWM channels. It is intended to be reused across different board shapes, artwork, and LED layouts without redesigning the electronics each time.
 
-## What It Uses
+The basic workflow is: copy the core project, rearrange it into an ornament, generate the manufacturing files, and send it off for PCBA — or [purchase the components and assemble it yourself](https://www.digikey.com/en/mylists/list/D7LT6KEKSW).
 
-The current design is based around:
+<p align="center">
+  <img src="PIC%20RGB%20Ornament%20Core/PIC%20RGB%20Ornament%20Core.png" alt="PIC RGB Ornament Core" width="40%">
+</p>
 
-* 24 low-current common-anode RGB LEDs
-* Microchip PIC12F1572
-* Microchip MCP1640 boost converter
-* One CR2450R coin cell
-* C&K edge-mounted slide switch
-* Fixed low-current LED drive
-* Three PWM channels for red, green, and blue
-* Resistor networks to cut down on part count and routing clutter
-* Mostly low-profile SMD parts selected with turnkey PCBA in mind
+## What's Included
 
-The LEDs all share three color buses, while each individual LED die still gets its own current-limiting resistor.
+The [`PIC RGB Ornament Core`](PIC%20RGB%20Ornament%20Core/) folder contains the reusable KiCad project.
 
-The PIC directly sinks the RGB channels since the whole design is intentionally kept pretty dim and low-current.
+Reference files:
 
-## Power
+* [`PIC RGB Ornament Core_Schematic.pdf`](PIC%20RGB%20Ornament%20Core/PIC%20RGB%20Ornament%20Core_Schematic.pdf) — schematic
+* [`PIC RGB Ornament Core_PCB.pdf`](PIC%20RGB%20Ornament%20Core/PIC%20RGB%20Ornament%20Core_PCB.pdf) — component layout with a millimeter scale for quick size reference
+* [`PIC RGB Ornament Core.png`](PIC%20RGB%20Ornament%20Core/PIC%20RGB%20Ornament%20Core.png) — 3D viewer reference
 
-The CR2450R feeds an MCP1640 boost converter that generates about 3.58 V.
+Custom footprints are stored in the repository-level [`HX.pretty`](HX.pretty/) library. Each included KiCad project references this library through its local `fp-lib-table`.
 
-That gives the green and blue LED dies a little more voltage headroom as the battery runs down and keeps the colors more consistent than running everything directly from the coin cell.
+The core [`PCBA`](PIC%20RGB%20Ornament%20Core/PCBA/) folder contains files that can generally be reused between designs:
 
-There is also a small resettable fuse on the battery input for basic fault protection.
+* `BOM.xlsx`
+* `FIRMWARE.zip`
 
-## Firmware
+The supplied firmware continuously cycles through a slow rainbow at conservative brightness. The PIC is intended to be programmed during assembly, so the finished ornament requires no configuration.
 
-The PIC handles the RGB animation using its three hardware PWM channels.
+## Making an Ornament
 
-The default idea is a slow rainbow cycle with conservative PWM duty so the ornament stays dim, pleasant, and reasonably battery-friendly.
+Clone or download the repository and make a copy of the `PIC RGB Ornament Core` project, or use one of the existing ornaments as a starting point.
 
-The PIC is intended to be programmed by the assembly house before it is installed. ICSP pads can still be included on the PCB for development or recovery, but the person receiving the ornament should never need to flash or configure anything.
+The electrical design can generally remain unchanged. Modify the board outline, component placement, LED arrangement, artwork, mounting features, and routing as needed for the new design.
 
-Insert battery, flip switch, lights happen.
+If additional custom footprints are required, add them to the root `HX.pretty` library. Projects located one directory below the repository root can use the same `fp-lib-table` entry:
 
-## Manufacturing
+```scheme
+(fp_lib_table
+  (version 7)
+  (lib (name "HX")(type "KiCad")(uri "${KIPRJMOD}/../HX.pretty")(options "")(descr "Project custom footprints"))
+)
+```
 
-The design is being made with turnkey PCBA in mind, especially PCBWay.
+## Preparing a Layout for PCBA
 
-KiCad symbols include manufacturer and part-number information where it matters so the BOM can be generated with minimal cleanup.
+The BOM and firmware can normally be reused as long as the circuit and component selections remain unchanged.
 
-A few parts use manufacturer-specific footprints instead of generic ones, especially:
+The remaining manufacturing files are layout-specific and should be regenerated for each ornament.
 
-* RGB LEDs
-* resistor networks
-* edge-mounted switch
-* CR2450 holder
+### Gerbers and Drill Files
 
-Those should always be checked against the current manufacturer drawings before ordering boards.
+From KiCad PCB Editor:
+
+`File → Fabrication Outputs → Gerbers`
+
+Export the required copper, solder mask, silkscreen, paste, and `Edge.Cuts` layers, then generate the Excellon drill files.
+
+Zip the Gerber and drill outputs together for fabrication.
+
+### CPL / Pick-and-Place
+
+From KiCad PCB Editor:
+
+`File → Fabrication Outputs → Component Placement`
+
+Export the placement file in millimeters with reference designator, X/Y coordinates, rotation, and board side.
+
+PCBWay refers to this as the **CPL** or centroid file.
+
+### Assembly Drawings
+
+Plot `F.Fab` and `B.Fab` as PDFs with the board outline visible.
+
+These provide a simple component-location and orientation reference for assembly.
+
+### BOM
+
+The baseline BOM is included at:
+
+`PIC RGB Ornament Core/PCBA/BOM.xlsx`
+
+Regenerate or edit it if component values, part numbers, or designators change.
+
+### PIC Firmware
+
+Production firmware is included at:
+
+`PIC RGB Ornament Core/PCBA/FIRMWARE.zip`
+
+For turnkey assembly, program:
+
+`U2 — PIC12F1572T-I/MF`
+
+using the supplied `.hex` file before assembly.
+
+Example production note:
+
+> Program U2 before assembly using the supplied HEX file. After assembly, power the board and verify that all 24 RGB LEDs smoothly cycle through the rainbow.
+
+## Example
+
+[`HappyBirthdayMickey_A`](HappyBirthdayMickey_A/) is an example ornament built from the core design.
+
+Its `PCBA` folder contains a complete set of layout-specific production files:
+
+* Gerber and drill ZIP
+* BOM
+* CPL / pick-and-place file
+* assembly drawing PDFs
+* firmware
+
+These are included as a reference for what a completed manufacturing package looks like rather than as production files for the generic core.
 
 ## Notes
 
-This is still a hobby hardware project, so battery life, LED brightness, firmware behavior, footprints, and assembly details should all be checked on prototypes before making a large batch.
+The default firmware intentionally runs the LEDs fairly dim to reduce coin-cell current and keep the ornament comfortable to view in a dark room.
 
-Coin cells are also a swallowing hazard, so any finished ornament should keep the battery reasonably secure and inaccessible to small children.
+The CR2450R battery should be installed **after** PCB assembly and should not go through reflow.
 
 ## License
 
@@ -67,6 +126,4 @@ This project is released under the **CC0 1.0 Universal Public Domain Dedication*
 
 Use it, modify it, manufacture it, remix it, or turn it into something completely different.
 
-Attribution is not required.
-
-See [`LICENSE`](LICENSE)
+See [`LICENSE`](LICENSE).
